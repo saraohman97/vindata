@@ -48,3 +48,16 @@ export const wines = [
         createdAt: "20 september 2025"
     },
 ]
+
+export type WineType = {
+        id: number,
+        label: string,
+        brand: string,
+        color: string,
+        flavor: string,
+        country: string,
+        price: number,
+        grape: string,
+        review: number,
+        createdAt: string
+}

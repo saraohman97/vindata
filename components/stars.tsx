@@ -1,9 +1,14 @@
 "use client";
 
+import { WineType } from "@/data";
 import React from "react";
 import { FaRegStar, FaStar } from "react-icons/fa";
 
-const StarsRating = ({ item }: any) => {
+interface StarProps {
+  item: WineType
+}
+
+const StarsRating = ({ item }: StarProps) => {
   if (item.review === 1)
     return (
       <div className="flex gap-2 p-4 pt-2">

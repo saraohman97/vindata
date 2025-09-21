@@ -9,6 +9,7 @@ const FilteredData = () => {
   const [cards, setCards] = useState(wines);
   const [currentCard, setCurrentCard] = useState("All");
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleBtns = (e: any) => {
     const word = e.target.value;
     setCurrentCard(word);
