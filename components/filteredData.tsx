@@ -46,6 +46,7 @@ const FilteredData = () => {
                   className={`h-72 object-contain rounded-t-xl pt-4 hover:p-0 transition-all duration-300`}
                 />
                 <h3 className="p-4 pb-0 font-bold">{card.brand}</h3>
+                <p>{card.label}</p>
                 <StarsRating item={card} />
               </div>
             ))}
@@ -88,15 +89,38 @@ const FilteredData = () => {
           >
             Frankrike
           </button>
+
           <button
             onClick={handleBtns}
             type="button"
-            value="Sverige"
+            value="Italien"
             className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
-              currentCard === "Sverige" ? "bg-black/20" : "bg-transparent"
+              currentCard === "Italien" ? "bg-black/20" : "bg-transparent"
             }`}
           >
-            Sverige
+            Italien
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Spanien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "Spanien" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            Spanien
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="USA"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "USA" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            USA
           </button>
         </div>
       </section>

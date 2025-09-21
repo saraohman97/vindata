@@ -15,7 +15,7 @@ export default function Home() {
         height={2000}
         className="object-cover h-[800px] max-sm:max-h-screen"
       />
-      <h1 className="absolute h-screen inset-0 text-white flex items-center justify-center pb-20 max-w-screen-lg mx-auto text-center max-sm:p-3 md:text-8xl max-md:text-6xl font-serif font-bold">
+      <h1 className="absolute h-screen inset-0 text-white flex items-center justify-center max-w-screen-lg mx-auto text-center max-sm:p-3 max-sm:pb-20 pb-20 md:text-8xl max-md:text-5xl font-serif font-bold">
         Rött vin för alla tillfällen
       </h1>
 

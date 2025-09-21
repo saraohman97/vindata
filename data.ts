@@ -31,7 +31,7 @@ export const wines = [
         flavor: "Fruktigt & Smakrikt",
         country: "Italien",
         price: 109,
-        grape: "Sangiovese och colorino.",
+        grape: "Sangiovese och colorino",
         review: 5,
         createdAt: "20 september 2025"
     },
