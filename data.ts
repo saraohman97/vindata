@@ -12,6 +12,30 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 5,
+        label: "2020",
+        brand: "Villa Puccini",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Italien",
+        price: 99,
+        grape: "Sangiovese",
+        review: 5,
+        createdAt: "20 september 2025"
+    },
+    {
+        id: 4,
+        label: "la Bestia, 2024",
+        brand: "Governo Rosso Toscano",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Italien",
+        price: 109,
+        grape: "Sangiovese och colorino.",
+        review: 5,
+        createdAt: "20 september 2025"
+    },
+    {
         id: 3,
         label: "Labouré-Roi, 2023",
         brand: "Bourgogne Pinot Noir",
@@ -41,7 +65,7 @@ export const wines = [
         brand: "ChateauBriand",
         color: "Rött",
         flavor: "Stramt & nyanserat",
-        country: "Sverige",
+        country: "Frankrike",
         price: 119,
         grape: "Merlot",
         review: 3,
@@ -50,14 +74,14 @@ export const wines = [
 ]
 
 export type WineType = {
-        id: number,
-        label: string,
-        brand: string,
-        color: string,
-        flavor: string,
-        country: string,
-        price: number,
-        grape: string,
-        review: number,
-        createdAt: string
+    id: number,
+    label: string,
+    brand: string,
+    color: string,
+    flavor: string,
+    country: string,
+    price: number,
+    grape: string,
+    review: number,
+    createdAt: string
 }

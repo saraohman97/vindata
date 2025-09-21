@@ -36,7 +36,7 @@ const FilteredData = () => {
             {cards.map((card) => (
               <div
                 key={card.id}
-                className="bg-gray-50 rounded-xl text-black md:w-48 text-center"
+                className="bg-gray-50 rounded-xl text-black md:w-48 text-center flex flex-col items-center"
               >
                 <Image
                   src={`/${card.id}.webp`}
@@ -56,14 +56,14 @@ const FilteredData = () => {
       </section>
 
       <section className="p-4 md:w-1/3 rounded-xl h-fit">
-        <h3 className="mb-2 font-serif font-bold">Sök</h3>
+        <h3 className="mb-2 font-serif font-bold max-md:hidden">Sök</h3>
         <input
           type="text"
           placeholder="Namn / datum"
-          className="h-10 w-full font-serif bg-transparent px-4 border rounded-full outline-none hover:bg-gray-50 mb-4"
+          className="h-10 w-full font-serif bg-transparent px-4 border rounded-full outline-none hover:bg-gray-50 mb-4 max-md:hidden"
         />
 
-        <div className="flex flex-wrap gap-2 max-md:hidden">
+        <div className="flex flex-wrap gap-2">
           <h2 className="text-sm font-bold w-full underline underline-offset-2 font-serif text-red-900">
             Länder
           </h2>
