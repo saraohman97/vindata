@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ dark }) => {
 
   return (
     <div
-      className={`fixed top-0 z-40 bg-transparent h-screen w-screen ${
+      className={`fixed top-0 z-40 bg-transparent w-full ${
         dark ? "text-white" : "text-black"
       } 
       ${isVisible && dark ? "hidden" : ""}

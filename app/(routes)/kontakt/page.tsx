@@ -24,7 +24,6 @@ const AboutPage = () => {
           Bakom kuliserna
         </h1>
 
-        {/* ABOUT SECTION */}
         <div className="p-10 grid grid-cols-2 gap-10 max-w-screen-md mx-auto text-start bg-white rounded-xl">
           <div>
             <h3 className="text-red-900 text-2xl font-serif font-bold mb-4">
