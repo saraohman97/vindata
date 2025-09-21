@@ -41,7 +41,7 @@ export const wines = [
         brand: "ChateauBriand",
         color: "Rött",
         flavor: "Stramt & nyanserat",
-        country: "Frankrike",
+        country: "Sverige",
         price: 119,
         grape: "Merlot",
         review: 3,
