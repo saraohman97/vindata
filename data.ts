@@ -12,6 +12,18 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 6,
+        label: "2014",
+        brand: "Château Les Trois Manoirs",
+        color: "Rött",
+        flavor: "Stramt & Nyanserat",
+        country: "Frankrike",
+        price: 149,
+        grape: "55% Cabernet sauvignon / 35 % Merlot / 5% Malbec / 3% Petit Verdot / 2% Cabernet franc",
+        review: 5,
+        createdAt: "24 september 2025"
+    },
+    {
         id: 5,
         label: "2020",
         brand: "Villa Puccini",
