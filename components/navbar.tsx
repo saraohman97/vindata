@@ -9,20 +9,20 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ dark }) => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const controlNavbar = () => {
       const currentScrollY = window.scrollY;
 
-      if(currentScrollY < 700) {
-        setIsVisible(false)
+      if (currentScrollY < 700) {
+        setIsVisible(false);
       } else {
-        setIsVisible(true)
+        setIsVisible(true);
       }
-    }
-    window.addEventListener("scroll", controlNavbar)
-  }, [])
+    };
+    window.addEventListener("scroll", controlNavbar);
+  }, []);
 
   return (
     <div
@@ -37,6 +37,21 @@ const Navbar: React.FC<NavbarProps> = ({ dark }) => {
           <Link href={"/"} className="text-3xl mr-10">
             Vin & Mat
           </Link>
+
+          <div className="flex gap-4 items-center">
+            <Link
+              href="/"
+              className={`hover:underline underline-offset-8 cursor-pointer ${dark ? "hover:text-white/70" : "hover:text-black/70"}`}
+            >
+              Vinkällare
+            </Link>
+            <Link
+              href="/kok"
+              className={`hover:underline underline-offset-8 cursor-pointer ${dark ? "hover:text-white/70" : " hover:text-black/70"}`}
+            >
+              Kök
+            </Link>
+          </div>
         </div>
 
         <Link
