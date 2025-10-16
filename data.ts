@@ -12,6 +12,30 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 9,
+        label: "Merlot, 2024",
+        brand: "Grand Sud",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Frankrike",
+        price: 99,
+        grape: "Merlot",
+        review: 2,
+        createdAt: "15 oktober 2025"
+    },
+    {
+        id: 8,
+        label: "Roble, 2023",
+        brand: "Campo Luz",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Spanien",
+        price: 109,
+        grape: "Tempranillo",
+        review: 4,
+        createdAt: "15 oktober 2025"
+    },
+    {
         id: 7,
         label: "Le Grand Manège, 2023",
         brand: "Côtes-du-Rhône",
