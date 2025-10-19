@@ -82,6 +82,17 @@ const FilteredData = () => {
           <button
             onClick={handleBtns}
             type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "Australien" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            Australien
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
             value="Frankrike"
             className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
               currentCard === "Frankrike" ? "bg-black/20" : "bg-transparent"
