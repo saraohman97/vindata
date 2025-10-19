@@ -12,6 +12,78 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 15,
+        label: "Lionheart of the Barossa Shiraz, 2022",
+        brand: "Dandelion Vineyards Shiraz 2022",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Australien",
+        price: 135,
+        grape: "Shiraz",
+        review: 2,
+        createdAt: "20 oktober 2025"
+    },
+    {
+        id: 14,
+        label: "2023",
+        brand: "Château Pech-Latt",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Frankrike",
+        price: 169,
+        grape: "40% syrah, 35% grenache, 20% carignan och 5% marselan.",
+        review: 2,
+        createdAt: "20 oktober 2025"
+    },
+    {
+        id: 13,
+        label: "Bergerac, 2023",
+        brand: "Le Sablou",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Frankrike",
+        price: 89,
+        grape: "59% merlot, 25% cabernet sauvignon, 10% cabernet franc och 6% malbec.",
+        review: 4,
+        createdAt: "20 oktober 2025"
+    },
+    {
+        id: 12,
+        label: "Labouré-Roi, 2023",
+        brand: "Bourgogne Pinot Noir",
+        color: "Rött",
+        flavor: "Mjukt & Bärigt",
+        country: "Frankrike",
+        price: 145,
+        grape: "Pinot noir",
+        review: 3,
+        createdAt: "20 oktober 2025"
+    },
+    {
+        id: 11,
+        label: "Pinot noir, 2023",
+        brand: "Tissot & Potel La Sixième Côte",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Frankrike",
+        price: 139,
+        grape: "Pinot noir",
+        review: 4,
+        createdAt: "19 oktober 2025"
+    },
+    {
+        id: 10,
+        label: "Tempranillo Cabernet Sauvignon Merlot, 2023",
+        brand: "Banderilleros Ecológico",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Spanien",
+        price: 89,
+        grape: "60% tempranillo, 30% cabernet sauvignon och 10% merlot.",
+        review: 3,
+        createdAt: "18 oktober 2025"
+    },
+    {
         id: 9,
         label: "Merlot, 2024",
         brand: "Grand Sud",
