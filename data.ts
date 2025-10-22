@@ -12,6 +12,18 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 16,
+        label: "Merlot, 2023",
+        brand: "Domaine Lalande Réserve",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Frankrike",
+        price: 79,
+        grape: "Merlot",
+        review: 4,
+        createdAt: "22 oktober 2025"
+    },
+    {
         id: 15,
         label: "Lionheart of the Barossa Shiraz, 2022",
         brand: "Dandelion Vineyards Shiraz 2022",
