@@ -12,6 +12,30 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 18,
+        label: "Ripasso, 2022",
+        brand: "Casalforte",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Italien",
+        price: 119,
+        grape: "70% corvina, 20% rondinella, 5% molinara samt 5% övriga druvsorter.",
+        review: 2,
+        createdAt: "5 november 2025"
+    },
+    {
+        id: 17,
+        label: "Nero d'Avola, 2024",
+        brand: "Manifesto",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Italien",
+        price: 89,
+        grape: "85% nero d'avola och 15% cabernet sauvignon.",
+        review: 1,
+        createdAt: "3 november 2025"
+    },
+    {
         id: 16,
         label: "Merlot, 2023",
         brand: "Domaine Lalande Réserve",
