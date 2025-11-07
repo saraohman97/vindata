@@ -12,6 +12,18 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 19,
+        label: "Toscana Sangiovese",
+        brand: "Pietra d' Elsa",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Italien",
+        price: 99,
+        grape: "Sangiovese",
+        review: 3,
+        createdAt: "7 november 2025"
+    },
+    {
         id: 18,
         label: "Ripasso, 2022",
         brand: "Casalforte",
