@@ -12,6 +12,18 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 20,
+        label: "Riserva, 2017",
+        brand: "Copertino",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Italien",
+        price: 99,
+        grape: "Negroamaro",
+        review: 4,
+        createdAt: "9 november 2025"
+    },
+    {
         id: 19,
         label: "Toscana Sangiovese",
         brand: "Pietra d' Elsa",
