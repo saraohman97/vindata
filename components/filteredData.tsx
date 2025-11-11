@@ -30,7 +30,7 @@ const FilteredData = () => {
 
   return (
     <div className="flex max-md:flex-col-reverse gap-10 items-start">
-      <section className="flex flex-wrap gap-10 w-full">
+      <section className="flex flex-wrap max-md:grid grid-cols-2 gap-4 md:gap-10 w-full">
         {cards.length ? (
           <>
             {cards.map((card) => (
