@@ -12,6 +12,18 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 21,
+        label: "Tempranillo, 2024",
+        brand: "Candidato Ecologico",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Spanien",
+        price: 85,
+        grape: "Tempranillo",
+        review: 3,
+        createdAt: "11 november 2025"
+    },
+    {
         id: 20,
         label: "Riserva, 2017",
         brand: "Copertino",
@@ -217,14 +229,14 @@ export const wines = [
     },
     {
         id: 3,
-        label: "Labouré-Roi, 2023",
-        brand: "Bourgogne Pinot Noir",
+        label: "Organic Syrah, 2024",
+        brand: "Mucho Mas",
         color: "Rött",
-        flavor: "Mjukt & Bärigt",
-        country: "Frankrike",
-        price: 145,
-        grape: "Pinot noir",
-        review: 4,
+        flavor: "Fruktigt & Smakrikt",
+        country: "Spanien",
+        price: 229,
+        grape: "Syrah",
+        review: 3,
         createdAt: "20 september 2025"
     },
     {
