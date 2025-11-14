@@ -7,7 +7,8 @@ import { posts } from "@/data";
 
 export default function Home() {
   const [cards, setCards] = useState(posts);
-  const [currentCard, setCurrentCard] = useState("All");
+  const [currentCard, setCurrentCard] = useState("Alla");
+  const [open, setOpen] = useState(false);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleBtns = (e: any) => {
@@ -16,7 +17,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (currentCard === "All") {
+    if (currentCard === "Alla") {
       setCards(posts);
     } else {
       const filtered = posts.filter((card) => {
@@ -53,67 +54,90 @@ export default function Home() {
           </div>
 
           {/* POSTLIST AND SIDEBAR */}
+            <div className="font-bold text-sm mb-2">
+              Visar: {currentCard === "Alla" ? "Alla kategorier" : currentCard}
+            </div>
+
           <div className="flex max-md:flex-col-reverse gap-10 items-start">
-            <section className="flex flex-wrap gap-10 w-full">
-              {cards.length ? (
-                <>
-                  {cards.map((card) => (
+            <section className="grid grid-cols-3 gap-10 w-full">
+              {/* POST */}
+              {cards.length
+                ? cards.map((card) => (
                     <div
                       key={card.id}
-                      className="bg-gray-50 rounded-xl text-black md:w-[420px]"
+                      className="rounded-xl text-black text-center"
                     >
+                      {/* IMAGE */}
                       <Image
                         src={`/${card.image}`}
                         alt=""
                         width={500}
                         height={500}
-                        className={`object-cover rounded-t-xl pt-4 hover:p-0 transition-all duration-300 max-h-96`}
+                        className="max-h-[450px] object-cover rounded-sm"
                       />
-                      <h3 className="p-4 pb-0 font-bold font-serif">
-                        {card.heading}
-                      </h3>
-                      <p className="text-sm p-4 pt-2">{card.text}</p>
 
-                      {card.recipe.ingredients[1] === "" ? (
-                        ""
-                      ) : (
-                        <div className="p-4 flex gap-10 text-sm">
-                          <div className="w-min">
-                            {card.recipe.ingredients
-                              .toString()
-                              .replaceAll(",", " ")}
-                          </div>
+                      <div className="py-4 flex flex-col w-full items-center">
+                        {/* TEXT */}
+                        <h1 className="font-bold font-serif text-2xl">
+                          {card.title}
+                        </h1>
+                        <p className="text-red-900 text-sm">{card.createdAt} | {card.category}</p>
+                        <p className="pb-2 font-sans">{card.text}</p>
+                        <div className="font-bold underline underline-offset-2 cursor-pointer w-fit text-sm">Se recept</div>
 
-                          <div className="flex flex-col gap-2 w-full">
-                            <div>
-                              1.
-                              {card.recipe.instructions[1]}
-                            </div>
+                        {/* RECIPE */}
+                        {/* {card.recipe.ingredients[1] === "" ? (
+                          ""
+                        ) : (
+                          <>
+                            {card.recipe! && open ? (
+                              <>
+                                <h3 className="font-bold font-serif">
+                                  {card.recipe.heading}
+                                </h3>
 
-                            <div>
-                              2.
-                              {card.recipe.instructions[2]}
-                            </div>
+                                <div className="flex gap-10 text-sm">
+                                  <div className="w-min">
+                                    {card.recipe.ingredients
+                                      .toString()
+                                      .replaceAll(",", " ")}
+                                  </div>
 
-                            <div>
-                              3.
-                              {card.recipe.instructions[3]}
-                            </div>
-                          </div>
-                          {/* {card.recipe.ingredients[1].toString()} */}
-                          {/* {card.recipe.ingredients.toString().split("")} */}
-                          {/* {cards.map(c => (c.recipe.ingredients))} */}
-                        </div>
-                      )}
+                                  <div className="flex flex-col gap-2 w-full">
+                                    <div>
+                                      1.
+                                      {card.recipe.instructions[1]}
+                                    </div>
+
+                                    <div>
+                                      2.
+                                      {card.recipe.instructions[2]}
+                                    </div>
+
+                                    <div>
+                                      3.
+                                      {card.recipe.instructions[3]}
+                                    </div>
+                                  </div>
+                                </div>
+                              </>
+                            ) : (
+                              <button
+                                className="font-bold"
+                                onClick={() => setOpen(true)}
+                              >
+                                Se recept
+                              </button>
+                            )}
+                          </>
+                        )} */}
+                      </div>
                     </div>
-                  ))}
-                </>
-              ) : (
-                "Inga inlägg"
-              )}
+                  ))
+                : "Inga inlägg"}
             </section>
 
-            <section className="p-4 md:w-1/3 rounded-xl h-fit">
+            <section className="md:w-1/3 rounded-xl h-fit">
               <h3 className="mb-2 font-serif font-bold max-md:hidden">Sök</h3>
               <input
                 type="text"
@@ -128,7 +152,7 @@ export default function Home() {
                 <button
                   onClick={handleBtns}
                   type="button"
-                  value="All"
+                  value="Alla"
                   className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
                     currentCard === "All" ? "bg-black/20" : "bg-transparent"
                   }`}

@@ -68,8 +68,57 @@ const FilteredData = () => {
           placeholder="Namn / datum"
           className="h-10 w-full font-serif bg-transparent px-4 border rounded-full outline-none hover:bg-gray-50 mb-4 max-md:hidden"
         />
-
+{/* 
         <div className="flex flex-wrap gap-2">
+          <h2 className="text-sm font-bold w-full underline underline-offset-2 font-serif text-red-900">
+            Färger
+          </h2>
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Alla"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "Alla" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            Alla
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "Australien" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            Rött
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "Australien" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            Vitt
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "Australien" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            Rosé
+          </button>
+        </div> */}
+
+        <div className="flex flex-wrap gap-2 mt-4">
           <h2 className="text-sm font-bold w-full underline underline-offset-2 font-serif text-red-900">
             Länder
           </h2>
@@ -139,6 +188,58 @@ const FilteredData = () => {
             USA
           </button>
         </div>
+
+        {/* <div className="flex flex-wrap gap-2 mt-4 max-md:hidden">
+          <h2 className="text-sm font-bold w-full underline underline-offset-2 font-serif text-red-900">
+            Smaker
+          </h2>
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Alla"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold ${
+              currentCard === "Alla" ? "bg-black/20" : "bg-transparent"
+            }`}
+          >
+            Alla
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold`}
+          >
+            Fruktigt & Smakrikt
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold`}
+          >
+            Mjukt & Bärigt
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold`}
+          >
+            Stramt & nyanserat
+          </button>
+
+          <button
+            onClick={handleBtns}
+            type="button"
+            value="Australien"
+            className={`h-10 px-4 border rounded-3xl hover:bg-gray-50 hover:text-red-900 hover:border-red-900 text-sm font-bold`}
+          >
+            Kryddigt & Mustigt
+          </button>
+        </div> */}
       </section>
     </div>
   );

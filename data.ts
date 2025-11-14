@@ -286,14 +286,15 @@ export const posts = [
     //     }
     // },
     {
-        id: 2, 
-        heading: "Tranellska restaurang",
+        id: 1, 
+        title: "Tranellska restaurang",
         text: "Idag var jag på gymnasieskolans restaurang där trerättersluncher serveras för 160 kr per kuvert. Jag fick en förrätt att preppa och tillaga, halstrad råbiff.",
         image: "post-1.jpg",
         createdAt: "24 september 2025",
         category: "Kockskola",
         recipe: {
-            summary: "",
+            heading: "Halstrad råbiff",
+            summary: "summary",
             ingredients: [
                 "Ryggbiff",
                 "Kapris",
@@ -309,21 +310,50 @@ export const posts = [
         }
     },
     {
-        id: 1, 
-        heading: "Tranellska restaurang",
-        text: "Idag var jag på gymnasieskolans restaurang där trerättersluncher serveras för 160 kr per kuvert. Jag fick en förrätt att preppa och tillaga, halstrad råbiff. Ryggbiff hackades för hand och formades till puckar. Grönsaker som kapris, lök, bostongurka och rödbetor lades Mise en place. Råbiffen halstras innan servering och dekoreras med en äggula. ",
+        id: 2, 
+        title: "Tranellska restaurang",
+        text: "Idag var jag på gymnasieskolans restaurang där trerättersluncher serveras för 160 kr per kuvert. Jag fick en förrätt att preppa och tillaga, halstrad råbiff.",
         image: "post-1.jpg",
         createdAt: "24 september 2025",
         category: "Kockskola",
         recipe: {
-            summary: "",
-            ingredients: {
-                1: "",
-                2: "",
-            },
+            heading: "Halstrad råbiff",
+            summary: "summary",
+            ingredients: [
+                "Ryggbiff",
+                "Kapris",
+                "Bostongurka",
+                "Rödlök",
+                "Rödbeta",
+            ],
             instructions: {
-                1: "",
-                2: "",
+                1: "Hacka ryggbiff och forma till 100g puckar.",
+                2: "Förbered grönsaker i mise en place.",
+                3: "Halstra råbiff och dekorera medäggula."
+            }
+        }
+    },
+    {
+        id: 3, 
+        title: "Tranellska restaurang",
+        text: "Idag var jag på gymnasieskolans restaurang där trerättersluncher serveras för 160 kr per kuvert. Jag fick en förrätt att preppa och tillaga, halstrad råbiff.",
+        image: "post-1.jpg",
+        createdAt: "24 september 2025",
+        category: "Kockskola",
+        recipe: {
+            heading: "Halstrad råbiff",
+            summary: "summary",
+            ingredients: [
+                "Ryggbiff",
+                "Kapris",
+                "Bostongurka",
+                "Rödlök",
+                "Rödbeta",
+            ],
+            instructions: {
+                1: "Hacka ryggbiff och forma till 100g puckar.",
+                2: "Förbered grönsaker i mise en place.",
+                3: "Halstra råbiff och dekorera medäggula."
             }
         }
     },
