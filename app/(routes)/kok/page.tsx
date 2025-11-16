@@ -8,7 +8,6 @@ import { posts } from "@/data";
 export default function Home() {
   const [cards, setCards] = useState(posts);
   const [currentCard, setCurrentCard] = useState("Alla");
-  const [open, setOpen] = useState(false);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleBtns = (e: any) => {
@@ -54,39 +53,45 @@ export default function Home() {
           </div>
 
           {/* POSTLIST AND SIDEBAR */}
-            <div className="font-bold text-sm mb-2">
-              Visar: {currentCard === "Alla" ? "Alla kategorier" : currentCard}
-            </div>
 
           <div className="flex max-md:flex-col-reverse gap-10 items-start">
-            <section className="grid grid-cols-3 gap-10 w-full">
-              {/* POST */}
-              {cards.length
-                ? cards.map((card) => (
-                    <div
-                      key={card.id}
-                      className="rounded-xl text-black text-center"
-                    >
-                      {/* IMAGE */}
-                      <Image
-                        src={`/${card.image}`}
-                        alt=""
-                        width={500}
-                        height={500}
-                        className="max-h-[450px] object-cover rounded-sm"
-                      />
+            <div className="w-full">
+              <div className="font-bold text-sm mb-2">
+                Visar: {currentCard === "Alla" ? "Alla kategorier" : currentCard}
+              </div>
 
-                      <div className="py-4 flex flex-col w-full items-center">
-                        {/* TEXT */}
-                        <h1 className="font-bold font-serif text-2xl">
-                          {card.title}
-                        </h1>
-                        <p className="text-red-900 text-sm">{card.createdAt} | {card.category}</p>
-                        <p className="pb-2 font-sans">{card.text}</p>
-                        <div className="font-bold underline underline-offset-2 cursor-pointer w-fit text-sm">Se recept</div>
+              <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* POST */}
+                {cards.length
+                  ? cards.map((card) => (
+                      <div
+                        key={card.id}
+                        className="rounded-xl text-black text-center"
+                      >
+                        {/* IMAGE */}
+                        <Image
+                          src={`/${card.image}`}
+                          alt=""
+                          width={500}
+                          height={500}
+                          className="max-h-[550px] w-full object-cover rounded-sm"
+                        />
 
-                        {/* RECIPE */}
-                        {/* {card.recipe.ingredients[1] === "" ? (
+                        <div className="py-4 flex flex-col w-full items-center">
+                          {/* TEXT */}
+                          <h1 className="font-bold font-serif text-2xl">
+                            {card.title}
+                          </h1>
+                          <p className="text-red-900 text-sm">
+                            {card.createdAt} | {card.category}
+                          </p>
+                          <p className="pb-2 font-sans">{card.text}</p>
+                          <div className="font-bold underline underline-offset-2 cursor-pointer w-fit text-sm">
+                            Se recept
+                          </div>
+
+                          {/* RECIPE */}
+                          {/* {card.recipe.ingredients[1] === "" ? (
                           ""
                         ) : (
                           <>
@@ -131,13 +136,14 @@ export default function Home() {
                             )}
                           </>
                         )} */}
+                        </div>
                       </div>
-                    </div>
-                  ))
-                : "Inga inlägg"}
-            </section>
+                    ))
+                  : "Inga inlägg"}
+              </section>
+            </div>
 
-            <section className="md:w-1/3 rounded-xl h-fit">
+            <section className="p-4 md:w-1/3 rounded-xl h-fit">
               <h3 className="mb-2 font-serif font-bold max-md:hidden">Sök</h3>
               <input
                 type="text"
