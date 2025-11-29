@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { wines } from "@/data";
 import Image from "next/image";
 import StarsRating from "./stars";
+import NoCards from "./noCards";
 
 const FilteredData = () => {
   const [cards, setCards] = useState(wines);
@@ -32,7 +33,7 @@ const FilteredData = () => {
     <div className="flex max-md:flex-col-reverse gap-10 items-start">
       <section className="w-full">
         <div className="font-bold text-sm mb-2">
-          Visar: {currentCard === "Alla" ? "Alla länder" : currentCard}s viner
+          Visar: {currentCard === "Alla" ? "Alla länder" : currentCard}s viner ({cards.length})
         </div>
         <div className="flex flex-wrap max-md:grid grid-cols-2 gap-4 md:gap-10">
           {cards.length ? (
@@ -56,7 +57,7 @@ const FilteredData = () => {
               ))}
             </>
           ) : (
-            "Inga inlägg"
+            <NoCards />
           )}
         </div>
       </section>

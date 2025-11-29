@@ -12,6 +12,30 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 23,
+        label: "Chianti, 2024",
+        brand: "Massetti",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Italien",
+        price: 109,
+        grape: "-",
+        review: 2,
+        createdAt: "28 november 2025"
+    },
+    {
+        id: 22,
+        label: "Barbera, 2023",
+        brand: "Piemonte",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Italien",
+        price: 129,
+        grape: "Barbera",
+        review: 1,
+        createdAt: "28 november 2025"
+    },
+    {
         id: 21,
         label: "Tempranillo, 2024",
         brand: "Candidato Ecologico",
