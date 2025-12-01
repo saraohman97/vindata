@@ -12,6 +12,54 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 27,
+        label: "Toscana Sangiovese, 2023",
+        brand: "Cecchi",
+        color: "Rött",
+        flavor: "Mjukt & Bärigt",
+        country: "Italien",
+        price: 95,
+        grape: "Sangiovese",
+        review: 2,
+        createdAt: "29 november 2025"
+    },
+    {
+        id: 26,
+        label: "Zinfandel, 2022",
+        brand: "Prohibition",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "USA",
+        price: 99,
+        grape: "Zinfandel",
+        review: 1,
+        createdAt: "29 november 2025"
+    },
+    {
+        id: 25,
+        label: "Lu meli",
+        brand: "Terre Siciliane IGP Syrah",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Italien",
+        price: 199,
+        grape: "Syrah",
+        review: 4,
+        createdAt: "29 november 2025"
+    },
+    {
+        id: 24,
+        label: "Valpolicella Ripasso DOC 2021",
+        brand: "Villa loren",
+        color: "Rött",
+        flavor: "Fruktigt & Smakrikt",
+        country: "Italien",
+        price: 219,
+        grape: "Corvina Veronese, Corvinone, Rondinella",
+        review: 4,
+        createdAt: "29 november 2025"
+    },
+    {
         id: 23,
         label: "Chianti, 2024",
         brand: "Massetti",
@@ -333,54 +381,7 @@ export const posts = [
             }
         }
     },
-    {
-        id: 2, 
-        title: "Tranellska restaurang",
-        text: "Idag var jag på gymnasieskolans restaurang där trerättersluncher serveras för 160 kr per kuvert. Jag fick en förrätt att preppa och tillaga, halstrad råbiff.",
-        image: "post-1.jpg",
-        createdAt: "24 september 2025",
-        category: "Kockskola",
-        recipe: {
-            heading: "Halstrad råbiff",
-            summary: "summary",
-            ingredients: [
-                "Ryggbiff",
-                "Kapris",
-                "Bostongurka",
-                "Rödlök",
-                "Rödbeta",
-            ],
-            instructions: {
-                1: "Hacka ryggbiff och forma till 100g puckar.",
-                2: "Förbered grönsaker i mise en place.",
-                3: "Halstra råbiff och dekorera medäggula."
-            }
-        }
-    },
-    {
-        id: 3, 
-        title: "Tranellska restaurang",
-        text: "Idag var jag på gymnasieskolans restaurang där trerättersluncher serveras för 160 kr per kuvert. Jag fick en förrätt att preppa och tillaga, halstrad råbiff.",
-        image: "post-1.jpg",
-        createdAt: "24 september 2025",
-        category: "Kockskola",
-        recipe: {
-            heading: "Halstrad råbiff",
-            summary: "summary",
-            ingredients: [
-                "Ryggbiff",
-                "Kapris",
-                "Bostongurka",
-                "Rödlök",
-                "Rödbeta",
-            ],
-            instructions: {
-                1: "Hacka ryggbiff och forma till 100g puckar.",
-                2: "Förbered grönsaker i mise en place.",
-                3: "Halstra råbiff och dekorera medäggula."
-            }
-        }
-    },
+
 ]
 
 export type WineType = {
