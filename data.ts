@@ -12,6 +12,30 @@ export const wines = [
     //     createdAt: "20 september 2025"
     // },
     {
+        id: 29,
+        label: "Appassimento, 2024",
+        brand: "Casa Marzoni",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Italien",
+        price: 115,
+        grape: "Primitivo, negroamaro och malvasia.",
+        review: 3,
+        createdAt: "9 devember 2025"
+    },
+    {
+        id: 28,
+        label: "Ripasso, 2023",
+        brand: "Campolieti",
+        color: "Rött",
+        flavor: "Kryddigt & Mustigt",
+        country: "Italien",
+        price: 129,
+        grape: "60% corvina, 20% rondinella, 15% molinara och 5% övriga druvsorter.",
+        review: 4,
+        createdAt: "9 december 2025"
+    },
+    {
         id: 27,
         label: "Toscana Sangiovese, 2023",
         brand: "Cecchi",
